@@ -14,6 +14,7 @@
 		87B9E8C41B0ADC0900971FB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9E8C31B0ADC0900971FB0 /* Images.xcassets */; };
 		87B9E8C71B0ADC0900971FB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B9E8C51B0ADC0900971FB0 /* LaunchScreen.xib */; };
 		87B9E8D31B0ADC0900971FB0 /* image_picker_uw_ios_hw5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8D21B0ADC0900971FB0 /* image_picker_uw_ios_hw5Tests.m */; };
+		87B9E8DD1B0ADD2200971FB0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B9E8DC1B0ADD2200971FB0 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		87B9E8CC1B0ADC0900971FB0 /* image-picker-uw-ios-hw5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "image-picker-uw-ios-hw5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B9E8D11B0ADC0900971FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B9E8D21B0ADC0900971FB0 /* image_picker_uw_ios_hw5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = image_picker_uw_ios_hw5Tests.m; sourceTree = "<group>"; };
+		87B9E8DC1B0ADD2200971FB0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B9E8DD1B0ADD2200971FB0 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		87B9E8AA1B0ADC0800971FB0 = {
 			isa = PBXGroup;
 			children = (
+				87B9E8DC1B0ADD2200971FB0 /* MobileCoreServices.framework */,
 				87B9E8B51B0ADC0800971FB0 /* image-picker-uw-ios-hw5 */,
 				87B9E8CF1B0ADC0900971FB0 /* image-picker-uw-ios-hw5Tests */,
 				87B9E8B41B0ADC0800971FB0 /* Products */,
