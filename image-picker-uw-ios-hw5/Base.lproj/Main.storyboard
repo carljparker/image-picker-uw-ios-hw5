@@ -44,8 +44,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Private Image Gallery" id="Wao-Ga-117">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Cpm-QN-bpR"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="3Qo-Bl-lrm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Qo-Bl-lrm"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqT-Kq-jGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
