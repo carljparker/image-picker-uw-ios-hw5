@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../image-picker-uw-ios-hw5/GetImageViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../image-picker-uw-ios-hw5/GetImageViewController.m">
+   </FileRef>
+   <FileRef
       location = "self:image-picker-uw-ios-hw5.xcodeproj">
    </FileRef>
 </Workspace>
