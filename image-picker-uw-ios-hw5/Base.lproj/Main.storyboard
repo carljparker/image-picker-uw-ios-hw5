@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="1132"/>
+            <point key="canvasLocation" x="1553" y="1119"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="9KJ-x5-8cR">
@@ -43,7 +43,9 @@
                             <outlet property="delegate" destination="UCm-1d-zvl" id="QXF-BF-Gi9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Wao-Ga-117"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Wao-Ga-117">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="3Qo-Bl-lrm"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqT-Kq-jGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
