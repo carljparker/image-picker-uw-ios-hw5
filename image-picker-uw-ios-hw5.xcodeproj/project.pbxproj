@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		87B9E8B91B0ADC0900971FB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8B81B0ADC0900971FB0 /* main.m */; };
 		87B9E8BC1B0ADC0900971FB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */; };
-		87B9E8BF1B0ADC0900971FB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8BE1B0ADC0900971FB0 /* ViewController.m */; };
 		87B9E8C21B0ADC0900971FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B9E8C01B0ADC0900971FB0 /* Main.storyboard */; };
 		87B9E8C41B0ADC0900971FB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9E8C31B0ADC0900971FB0 /* Images.xcassets */; };
 		87B9E8C71B0ADC0900971FB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B9E8C51B0ADC0900971FB0 /* LaunchScreen.xib */; };
@@ -33,8 +32,6 @@
 		87B9E8B81B0ADC0900971FB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87B9E8BA1B0ADC0900971FB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		87B9E8BD1B0ADC0900971FB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		87B9E8BE1B0ADC0900971FB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		87B9E8C11B0ADC0900971FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87B9E8C31B0ADC0900971FB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87B9E8C61B0ADC0900971FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,8 +84,6 @@
 			children = (
 				87B9E8BA1B0ADC0900971FB0 /* AppDelegate.h */,
 				87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */,
-				87B9E8BD1B0ADC0900971FB0 /* ViewController.h */,
-				87B9E8BE1B0ADC0900971FB0 /* ViewController.m */,
 				87B9E8C01B0ADC0900971FB0 /* Main.storyboard */,
 				87B9E8C31B0ADC0900971FB0 /* Images.xcassets */,
 				87B9E8C51B0ADC0900971FB0 /* LaunchScreen.xib */,
@@ -223,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B9E8BF1B0ADC0900971FB0 /* ViewController.m in Sources */,
 				87B9E8BC1B0ADC0900971FB0 /* AppDelegate.m in Sources */,
 				87B9E8B91B0ADC0900971FB0 /* main.m in Sources */,
 			);
@@ -422,6 +416,7 @@
 				87B9E8D81B0ADC0900971FB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87B9E8D91B0ADC0900971FB0 /* Build configuration list for PBXNativeTarget "image-picker-uw-ios-hw5Tests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +425,7 @@
 				87B9E8DB1B0ADC0900971FB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
