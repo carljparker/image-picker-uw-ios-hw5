@@ -44,6 +44,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Private Image Gallery" id="Wao-Ga-117">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Cpm-QN-bpR"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="3Qo-Bl-lrm"/>
                     </navigationItem>
                 </tableViewController>
