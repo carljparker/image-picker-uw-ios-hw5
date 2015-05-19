@@ -18,17 +18,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Capture Image" id="ZPy-8c-hMY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="jd9-ZO-cNK">
+                            <connections>
+                                <segue destination="s52-QA-dPi" kind="unwind" unwindAction="unwindToList:" id="ecb-Ne-zA3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="QyD-An-vpC"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="s52-QA-dPi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2365" y="1119"/>
         </scene>
         <!--Private Image Gallery-->
         <scene sceneID="9KJ-x5-8cR">
             <objects>
-                <tableViewController id="UCm-1d-zvl" sceneMemberID="viewController">
+                <tableViewController id="UCm-1d-zvl" customClass="ImageListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="giq-Am-1HY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,12 +53,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Private Image Gallery" id="Wao-Ga-117">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Qo-Bl-lrm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Qo-Bl-lrm">
+                            <connections>
+                                <segue destination="Bn7-fN-oSh" kind="presentation" id="o5v-ch-d8r"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqT-Kq-jGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="443"/>
+            <point key="canvasLocation" x="1578" y="211"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OuK-bR-bmU">
@@ -68,7 +78,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhk-1b-rDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760" y="443"/>
+            <point key="canvasLocation" x="774" y="199"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d7Z-6q-sA4">
