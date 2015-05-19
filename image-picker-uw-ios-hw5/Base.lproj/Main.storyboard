@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="1553" y="1119"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Private Image Gallery-->
         <scene sceneID="9KJ-x5-8cR">
             <objects>
                 <tableViewController id="UCm-1d-zvl" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="UCm-1d-zvl" id="QXF-BF-Gi9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Wao-Ga-117">
+                    <navigationItem key="navigationItem" title="Private Image Gallery" id="Wao-Ga-117">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="3Qo-Bl-lrm"/>
                     </navigationItem>
                 </tableViewController>
