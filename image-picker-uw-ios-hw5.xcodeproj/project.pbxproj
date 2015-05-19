@@ -85,10 +85,10 @@
 		87B9E8B51B0ADC0800971FB0 /* image-picker-uw-ios-hw5 */ = {
 			isa = PBXGroup;
 			children = (
-				87B9E8E11B0AEBDE00971FB0 /* GetImageViewController.h */,
-				87B9E8E21B0AEBDE00971FB0 /* GetImageViewController.m */,
 				87B9E8BA1B0ADC0900971FB0 /* AppDelegate.h */,
 				87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */,
+				87B9E8E11B0AEBDE00971FB0 /* GetImageViewController.h */,
+				87B9E8E21B0AEBDE00971FB0 /* GetImageViewController.m */,
 				87B9E8C01B0ADC0900971FB0 /* Main.storyboard */,
 				87B9E8C31B0ADC0900971FB0 /* Images.xcassets */,
 				87B9E8C51B0ADC0900971FB0 /* LaunchScreen.xib */,
