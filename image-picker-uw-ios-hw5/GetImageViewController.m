@@ -33,22 +33,29 @@
                                                                 message:@"Select the Source from Which to Capture the Image?"
                                                          preferredStyle:UIAlertControllerStyleActionSheet];
     
-    [ac addAction:[UIAlertAction actionWithTitle:@"Camera"
-                                           style:UIAlertActionStyleDefault
-                                         handler:^(UIAlertAction *action) {
-                                             NSLog(@"Image Src: Camera");
-                                         }]];
+    if (isCameraAvailable) {
+        [ac addAction:[UIAlertAction actionWithTitle:@"Camera"
+                                               style:UIAlertActionStyleDefault
+                                             handler:^(UIAlertAction *action) {
+                                                 NSLog(@"Image Src: Camera");
+                                             }]];
+    }
     
-    [ac addAction:[UIAlertAction actionWithTitle:@"Photo Library"
-                                           style:UIAlertActionStyleDefault
-                                         handler:^(UIAlertAction *action) {
-                                             NSLog(@"Image Src: Photo Lib");
-                                         }]];
+    if (isPhotoLibraryAvailable) {
+        [ac addAction:[UIAlertAction actionWithTitle:@"Photo Library"
+                                               style:UIAlertActionStyleDefault
+                                             handler:^(UIAlertAction *action) {
+                                                 NSLog(@"Image Src: Photo Lib");
+                                             }]];
+        
+    }
     
     [ac addAction:[UIAlertAction actionWithTitle:@"Cancel"
                                            style:UIAlertActionStyleCancel
                                          handler:nil]];
-
+    //
+    // In the demo, Shawn uses [self showDetailViewController...] here
+    //
     [self presentViewController:ac animated:YES completion:nil];
 
 }
