@@ -8,7 +8,7 @@
 
 #import "GetImageViewController.h"
 
-@interface GetImageViewController ()
+@interface GetImageViewController () 
 
 @end
 
@@ -23,6 +23,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)captureImageIconTapped:(id)sender {
     
     BOOL isCameraAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
@@ -50,6 +51,7 @@
                                                  UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
                                                  imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
                                                  imagePicker.mediaTypes = @[ (NSString *) kUTTypeImage ];
+                                                 imagePicker.delegate = self;
                                                 
                                                  [self presentViewController:imagePicker animated:YES completion:nil];
                                                  
@@ -66,6 +68,19 @@
     [self presentViewController:ac animated:YES completion:nil];
 
 }
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+
+    NSLog( @"@%s", __PRETTY_FUNCTION__ );
+    
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+
+    NSLog( @"@%s", __PRETTY_FUNCTION__ );
+    
+}
+
 
 /*
 #pragma mark - Navigation
