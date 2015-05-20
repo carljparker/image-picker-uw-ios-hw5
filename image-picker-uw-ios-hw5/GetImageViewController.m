@@ -46,6 +46,13 @@
                                                style:UIAlertActionStyleDefault
                                              handler:^(UIAlertAction *action) {
                                                  NSLog(@"Image Src: Photo Lib");
+                                                 
+                                                 UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+                                                 imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                                                 imagePicker.mediaTypes = @[ (NSString *) kUTTypeImage ];
+                                                
+                                                 [self presentViewController:imagePicker animated:YES completion:nil];
+                                                 
                                              }]];
         
     }

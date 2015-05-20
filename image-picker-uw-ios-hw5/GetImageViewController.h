@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MobileCoreServices/MobileCoreServices.h"
 
-@interface GetImageViewController : UIViewController
+@interface GetImageViewController : UIViewController <UIImagePickerControllerDelegate>
 
 @end
