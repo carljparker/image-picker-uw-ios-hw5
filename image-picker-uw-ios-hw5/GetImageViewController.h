@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetImageViewController : UIViewController
+@interface GetImageViewController : UIImagePickerController
 
 @end
