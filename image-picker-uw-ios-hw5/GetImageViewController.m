@@ -29,7 +29,28 @@
     
     BOOL isPhotoLibraryAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary];
     
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Image Source"
+                                                                message:@"Select the Source from Which to Capture the Image?"
+                                                         preferredStyle:UIAlertControllerStyleActionSheet];
     
+    [ac addAction:[UIAlertAction actionWithTitle:@"Camera"
+                                           style:UIAlertActionStyleDefault
+                                         handler:^(UIAlertAction *action) {
+                                             NSLog(@"Image Src: Camera");
+                                         }]];
+    
+    [ac addAction:[UIAlertAction actionWithTitle:@"Photo Library"
+                                           style:UIAlertActionStyleDefault
+                                         handler:^(UIAlertAction *action) {
+                                             NSLog(@"Image Src: Photo Lib");
+                                         }]];
+    
+    [ac addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                           style:UIAlertActionStyleCancel
+                                         handler:nil]];
+
+    [self presentViewController:ac animated:YES completion:nil];
+
 }
 
 /*
