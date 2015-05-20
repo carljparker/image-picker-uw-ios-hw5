@@ -23,7 +23,11 @@
                                 <segue destination="s52-QA-dPi" kind="unwind" unwindAction="unwindToList:" id="ecb-Ne-zA3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="QyD-An-vpC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="QyD-An-vpC">
+                            <connections>
+                                <action selector="captureImageIconTapped:" destination="BYZ-38-t0r" id="KAN-Nu-7vI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
