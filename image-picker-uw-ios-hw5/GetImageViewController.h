@@ -11,4 +11,6 @@
 
 @interface GetImageViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *displayPickedImageView;
+
 @end

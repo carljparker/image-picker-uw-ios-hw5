@@ -69,15 +69,24 @@
 
 }
 
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
 
     NSLog( @"@%s", __PRETTY_FUNCTION__ );
+    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
+    
+    self.displayPickedImageView.image = selectedImage;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
     
 }
+
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
 
     NSLog( @"@%s", __PRETTY_FUNCTION__ );
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

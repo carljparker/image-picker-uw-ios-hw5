@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pc9-kR-CHb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Capture Image-->
@@ -15,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODw-QT-lVb">
+                                <rect key="frame" x="84" y="75" width="432" height="449"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ODw-QT-lVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="G7N-wU-RBA"/>
+                            <constraint firstAttribute="centerY" secondItem="ODw-QT-lVb" secondAttribute="centerY" constant="0.5" id="UJQ-BF-9rG"/>
+                            <constraint firstItem="ODw-QT-lVb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="hjC-rG-DEf"/>
+                            <constraint firstAttribute="centerX" secondItem="ODw-QT-lVb" secondAttribute="centerX" id="nC0-E0-anG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Capture Image" id="ZPy-8c-hMY">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="jd9-ZO-cNK">
@@ -29,6 +41,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="displayPickedImageView" destination="ODw-QT-lVb" id="Qxj-wJ-7O0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="s52-QA-dPi" userLabel="Exit" sceneMemberID="exit"/>
