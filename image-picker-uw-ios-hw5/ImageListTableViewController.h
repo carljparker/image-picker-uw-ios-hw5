@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageTableViewCell.h"
+#import "GetImageViewController.h"
 
-@interface ImageListTableViewController : UITableViewController
+@interface ImageListTableViewController : UITableViewController <GetImageViewControllerDelegate>
 
 @end

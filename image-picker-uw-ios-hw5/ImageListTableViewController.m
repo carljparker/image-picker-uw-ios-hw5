@@ -6,18 +6,26 @@
 //  Copyright (c) 2015 Parker, Carl (HBO). All rights reserved.
 //
 
+
 #import "ImageListTableViewController.h"
+#import "GetImageViewController.h"
+
 
 static NSString * imageTableCellID = @"imageCell";
 static NSString * customImageCellID = @"customImageCell";
+
+NSMutableArray * imageInfoList;
+
 
 @interface ImageListTableViewController ()
 
 @end
 
+
 @implementation ImageListTableViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -25,24 +33,73 @@ static NSString * customImageCellID = @"customImageCell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    imageInfoList = [[NSMutableArray alloc] init];
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Table view data source
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 2;
+    return 1;
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 3;
+    return imageInfoList.count;
 }
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID  forIndexPath:indexPath];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    ImageInfo *imageInfo = (ImageInfo *)imageInfoList[indexPath.row];
+    
+    cell.imageView.image = imageInfo.image;
+    cell.tableDate.text  = [dateFormatter stringFromDate:imageInfo.dateTaken];
+    
+    return cell;
+    
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    [super prepareForSegue:segue sender:sender];
+    
+    UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+    
+    GetImageViewController *getImageViewController = (GetImageViewController *)navigationController.topViewController;
+    
+    getImageViewController.getImageDelegate = self;
+    
+}
+
+
+- (void)getImageViewController:(GetImageViewController *)getImageViewController didGetImageInfo:(ImageInfo *)imageInfo {
+    
+    [imageInfoList addObject:imageInfo];
+    
+    [self.tableView reloadData];
+    
+}
+
 
 //
 // This outlet is called when the Cancel button is tapped to
@@ -52,17 +109,6 @@ static NSString * customImageCellID = @"customImageCell";
     
     NSLog(@"%@", @"Cancel button dismissal of pick image UX");
     
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  
-    ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID  forIndexPath:indexPath];
-    
-    cell.tableDate.text = @"Carl Photo";
-    
-    return cell;
-
 }
 
 

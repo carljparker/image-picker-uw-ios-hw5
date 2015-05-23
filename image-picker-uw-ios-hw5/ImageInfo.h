@@ -16,4 +16,6 @@
 
 @property (strong) NSDate * dateTaken;
 
+-(instancetype) initWithImage:(UIImage *)image;
+
 @end
