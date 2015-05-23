@@ -39,6 +39,8 @@
                                                style:UIAlertActionStyleDefault
                                              handler:^(UIAlertAction *action) {
                                                  NSLog(@"Image Src: Camera");
+                                                 
+                                                 [self _presentImagePicker:UIImagePickerControllerSourceTypeCamera];
                                              }]];
     }
     
@@ -48,12 +50,7 @@
                                              handler:^(UIAlertAction *action) {
                                                  NSLog(@"Image Src: Photo Lib");
                                                  
-                                                 UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-                                                 imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-                                                 imagePicker.mediaTypes = @[ (NSString *) kUTTypeImage ];
-                                                 imagePicker.delegate = self;
-                                                
-                                                 [self presentViewController:imagePicker animated:YES completion:nil];
+                                                 [self _presentImagePicker:UIImagePickerControllerSourceTypePhotoLibrary];
                                                  
                                              }]];
         
@@ -63,10 +60,21 @@
                                            style:UIAlertActionStyleCancel
                                          handler:nil]];
     //
+    // Present the action sheet.
+    //
     // In the demo, Shawn uses [self showDetailViewController...] here
     //
     [self presentViewController:ac animated:YES completion:nil];
 
+}
+
+-(void) _presentImagePicker:(UIImagePickerControllerSourceType)sourceType {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.sourceType = sourceType;
+    imagePicker.mediaTypes = @[ (NSString *) kUTTypeImage ];
+    imagePicker.delegate = self;
+    
+    [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
 

@@ -49,7 +49,7 @@ static NSString * imageTableCellID = @"imageCell";
 //
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue; {
     
-    NSLog(@"%@", @"Cancel button dismissal of Add-Birthday UX");
+    NSLog(@"%@", @"Cancel button dismissal of pick image UX");
     
 }
 
