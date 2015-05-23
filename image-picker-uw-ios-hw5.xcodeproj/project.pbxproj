@@ -17,6 +17,7 @@
 		87B9E8E31B0AEBDE00971FB0 /* GetImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8E21B0AEBDE00971FB0 /* GetImageViewController.m */; };
 		87B9E8E61B0BC06F00971FB0 /* ImageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8E51B0BC06F00971FB0 /* ImageListTableViewController.m */; };
 		87B9E91D1B102F5300971FB0 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */; };
+		87B9E9201B10374300971FB0 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E91F1B10374300971FB0 /* ImageInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		87B9E8E51B0BC06F00971FB0 /* ImageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListTableViewController.m; sourceTree = "<group>"; };
 		87B9E91B1B102F5300971FB0 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
 		87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		87B9E91E1B10374300971FB0 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		87B9E91F1B10374300971FB0 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 			children = (
 				87B9E8BA1B0ADC0900971FB0 /* AppDelegate.h */,
 				87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */,
+				87B9E91E1B10374300971FB0 /* ImageInfo.h */,
+				87B9E91F1B10374300971FB0 /* ImageInfo.m */,
 				87B9E91B1B102F5300971FB0 /* ImageTableViewCell.h */,
 				87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */,
 				87B9E8E41B0BC06F00971FB0 /* ImageListTableViewController.h */,
@@ -234,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B9E8BC1B0ADC0900971FB0 /* AppDelegate.m in Sources */,
+				87B9E9201B10374300971FB0 /* ImageInfo.m in Sources */,
 				87B9E8B91B0ADC0900971FB0 /* main.m in Sources */,
 				87B9E91D1B102F5300971FB0 /* ImageTableViewCell.m in Sources */,
 				87B9E8E31B0AEBDE00971FB0 /* GetImageViewController.m in Sources */,

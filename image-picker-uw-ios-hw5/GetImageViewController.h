@@ -8,9 +8,27 @@
 
 #import <UIKit/UIKit.h>
 #import "MobileCoreServices/MobileCoreServices.h"
+#import "ImageInfo.h"
+
+@class GetImageViewController;
+
+@protocol GetImageViewControllerDelegate <NSObject>
+
+@required
+
+- (void)getImageViewController:(GetImageViewController *)getImageViewController
+                didGetImageInfo:(ImageInfo *)person;
+
+@end
+
 
 @interface GetImageViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *displayPickedImageView;
 
+@property (nonatomic, weak) id<GetImageViewControllerDelegate> getImageDelegate;
+
+
 @end
+
+
