@@ -16,6 +16,7 @@
 		87B9E8DD1B0ADD2200971FB0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B9E8DC1B0ADD2200971FB0 /* MobileCoreServices.framework */; };
 		87B9E8E31B0AEBDE00971FB0 /* GetImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8E21B0AEBDE00971FB0 /* GetImageViewController.m */; };
 		87B9E8E61B0BC06F00971FB0 /* ImageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E8E51B0BC06F00971FB0 /* ImageListTableViewController.m */; };
+		87B9E91D1B102F5300971FB0 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		87B9E8E21B0AEBDE00971FB0 /* GetImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImageViewController.m; sourceTree = "<group>"; };
 		87B9E8E41B0BC06F00971FB0 /* ImageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListTableViewController.h; sourceTree = "<group>"; };
 		87B9E8E51B0BC06F00971FB0 /* ImageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListTableViewController.m; sourceTree = "<group>"; };
+		87B9E91B1B102F5300971FB0 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 			children = (
 				87B9E8BA1B0ADC0900971FB0 /* AppDelegate.h */,
 				87B9E8BB1B0ADC0900971FB0 /* AppDelegate.m */,
+				87B9E91B1B102F5300971FB0 /* ImageTableViewCell.h */,
+				87B9E91C1B102F5300971FB0 /* ImageTableViewCell.m */,
 				87B9E8E41B0BC06F00971FB0 /* ImageListTableViewController.h */,
 				87B9E8E51B0BC06F00971FB0 /* ImageListTableViewController.m */,
 				87B9E8E11B0AEBDE00971FB0 /* GetImageViewController.h */,
@@ -230,6 +235,7 @@
 			files = (
 				87B9E8BC1B0ADC0900971FB0 /* AppDelegate.m in Sources */,
 				87B9E8B91B0ADC0900971FB0 /* main.m in Sources */,
+				87B9E91D1B102F5300971FB0 /* ImageTableViewCell.m in Sources */,
 				87B9E8E31B0AEBDE00971FB0 /* GetImageViewController.m in Sources */,
 				87B9E8E61B0BC06F00971FB0 /* ImageListTableViewController.m in Sources */,
 			);

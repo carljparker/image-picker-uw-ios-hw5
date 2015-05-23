@@ -9,6 +9,7 @@
 #import "ImageListTableViewController.h"
 
 static NSString * imageTableCellID = @"imageCell";
+static NSString * customImageCellID = @"customImageCell";
 
 @interface ImageListTableViewController ()
 
@@ -54,14 +55,13 @@ static NSString * imageTableCellID = @"imageCell";
 }
 
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imageTableCellID forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
+
 }
 
 
