@@ -56,9 +56,10 @@ static NSString * customImageCellID = @"customImageCell";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID forIndexPath:indexPath];
+  
+    ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID  forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.tableDate.text = @"Carl Photo";
     
     return cell;
 

@@ -7,7 +7,7 @@
 //
 
 #import "GetImageViewController.h"
-#import "ImageTableViewCell.h"
+
 
 @interface GetImageViewController () 
 

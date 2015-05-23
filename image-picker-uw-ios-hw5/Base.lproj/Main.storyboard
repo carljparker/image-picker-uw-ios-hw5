@@ -72,7 +72,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-Oe-t2X">
-                                            <rect key="frame" x="309" y="35" width="50" height="29"/>
+                                            <rect key="frame" x="459" y="35" width="50" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="DNP-Oe-t2X" secondAttribute="centerY" id="5ot-e2-Zjh"/>
                                         <constraint firstItem="mpN-VR-aR0" firstAttribute="leading" secondItem="dmi-ug-lto" secondAttribute="leadingMargin" constant="14" id="Zs0-tu-ccZ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="DNP-Oe-t2X" secondAttribute="trailing" constant="233" id="hsC-Pg-mbG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="DNP-Oe-t2X" secondAttribute="trailing" constant="83" id="hsC-Pg-mbG"/>
                                         <constraint firstItem="mpN-VR-aR0" firstAttribute="top" secondItem="dmi-ug-lto" secondAttribute="topMargin" constant="4" id="s3o-Ef-9CJ"/>
                                         <constraint firstAttribute="centerY" secondItem="mpN-VR-aR0" secondAttribute="centerY" constant="-0.5" id="wDP-bm-lTX"/>
                                     </constraints>

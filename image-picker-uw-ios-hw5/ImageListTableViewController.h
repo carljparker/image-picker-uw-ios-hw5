@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageTableViewCell.h"
 
 @interface ImageListTableViewController : UITableViewController
 
