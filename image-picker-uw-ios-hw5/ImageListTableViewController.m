@@ -64,14 +64,18 @@ NSMutableArray * imageInfoList;
     
     ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customImageCellID  forIndexPath:indexPath];
     
+    ImageInfo *imageInfo = (ImageInfo *)imageInfoList[indexPath.row];
+    
+    cell.imageView.image = imageInfo.image;
+
+    //
+    // Convert the date taken into a form we can display in the table
+    //
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     
-    ImageInfo *imageInfo = (ImageInfo *)imageInfoList[indexPath.row];
-    
-    cell.imageView.image = imageInfo.image;
     cell.tableDate.text  = [dateFormatter stringFromDate:imageInfo.dateTaken];
     
     return cell;
@@ -107,7 +111,7 @@ NSMutableArray * imageInfoList;
 //
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue; {
     
-    NSLog(@"%@", @"Cancel button dismissal of pick image UX");
+    NSLog(@"%@", @"Done button dismissal of pick image UX");
     
 }
 

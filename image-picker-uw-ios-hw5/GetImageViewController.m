@@ -7,6 +7,7 @@
 //
 
 #import "GetImageViewController.h"
+#import "ImageInfo.h"
 
 
 @interface GetImageViewController () 
@@ -86,6 +87,10 @@
     
     self.displayPickedImageView.image = selectedImage;
     
+    ImageInfo *imageInfo = [[ImageInfo alloc] initWithImage:selectedImage];
+    
+    [self.getImageDelegate getImageViewController:self didGetImageInfo:imageInfo];
+
     [self dismissViewControllerAnimated:YES completion:nil];
     
     
